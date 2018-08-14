@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "this is $0"
-echo "buildid = $ENV{'TRAVIS_BUILD_ID'}"
-echo "test = $ENV{'test'}"
+echo "buildid = $TRAVIS_BUILD_ID"
+echo "test = $TEST"
 
 exit 0

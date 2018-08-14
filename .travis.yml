@@ -7,7 +7,7 @@ env:
     
 script:
 - echo $TRAVIS_BUILD_ID
-- ehco $TEST
+- echo $TEST
 - cat ./README.md 
 - chmod  +x ./test_trigger.sh
 - ./test_trigger.sh

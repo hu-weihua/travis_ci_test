@@ -4,5 +4,7 @@ sudo: enabled
 script:
 - echo $TRAVIS_BUILD_ID
 - cat ./README.md 
+- chmod +x ./README.md 
 - ./test_trigger.sh
+
 

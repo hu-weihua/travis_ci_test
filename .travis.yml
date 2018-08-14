@@ -2,4 +2,5 @@ os: linux
 sudo: enabled
 
 script:
--cat ./README.md 
+- echo $TRAVIS_BUILD_ID
+- cat ./README.md 

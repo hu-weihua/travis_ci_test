@@ -1,15 +1,11 @@
 os: linux
 sudo: enabled
-
 env:
   global:
-    - secure: "LYjqWdpzfzWGZdJey11XPLdLA2XxFuu6syAb0+5jQYOHPwt0JjPXzrVJlVaejTpD5PswMx1Ll46DlfQq9A+WoJ70t2lpwM46A4kQ7UJFaIWm1p7rSWSui6Uxfkfvde7cxLsWDOwy7tzlGdi1skBaQ/hWBy/4gwCaL1yI99hlOLdRJx+S1HmNGd44FyshOMESkWDG6t44IkOT2+j4A2si6xQxuXtxesWZCFaoo5gaHkb/BY+zAPpokEaGZNDhymGJxXTiTBswFavBrS1YeAlzIpZoQqfNOMqMmbugAqpWT6/x/ZhbY9OTM/c6QqiaMK9m13qYUFa/5IOM5MJ9CDFoQ3fHyXeerq1h55jtWPhCXwdCe1i/O826en+nKEa0dGRNWEa3GqqTgulJ2FN21uQGyj5Mi4HtfPME+e8j+hEpqc9bb6VwGKLeGwRD5H+ivnxnKMZux9Rxa4fsq1OGZ0zISpFsTepxD4kTuG/oItYuX1+0iZJVju7xF3rsOkf0NrvCEOXRQPYy0vAOy6V2gyVCWRHrAzW2odCgKnV6NKa/XdrdUrewyUg3sZOCAO5PuwAEALhBgMGl6IIdyMjxvB3EU41e11/BCH8ZYU2Poqw39uVRl9gbgqwVXGphe3S1VMe8rZXF1laZ4CILb3smxFQ1edyynpffXjcvgVvyj+CtZnM="
-    
+  - secure: PISwFQM3gx2crXh7r5qnSIeFcOrXmFQDZxxYsuc+NmCjNabrePh+YKaLPOX5uZLnWhhTVBsYA1ZZ1z3oH1tZ/txWpwW3gbUKG/TBb/CwayoKwm0odfOdjEKBY7Q2E5ubRdMaSu63ETTQFJRX9LYdemWgQ+6W2rENpu/vGwjsWdpJxj8xmKjaYxKXGT2CcdevGhEGEbirhGw/yrkTYJAupII3q0eF8lMXNixzbEBL0RlGNhEcX1lmZfbVtrnzDFlxT/O39BZvPjFDwET4X6GccdIdSfZyYCj84kFgvltpP4NDbLLENf5Iex26JNsNgGi+0sLtdwhyrUJi19rcXhMSjh+UhuA3v26TB97IjMYUQwK/htVS1DooAPLhTNSPHtUSfEh+yQHeGlq/tKbhHMOBWAwRojKzmXMnUuEfsWf0d/47Lav6V/ol3ja+ClF540aGjytrYso68eBi/xk0J6gXRjgok7fAGKLN/JFVguDK8Npx3TwbHaFoPn4HOXOZ2RMBkWQkmOcWUaIQ+KkJjC5vUNZfW9wTcCPidPfgTDuVE22amMLSnsc4hWerPD8AcOwwtl+I5KkVUMqBKl2AU9Lz41OPqaInIeX02FoA9ArweqNS7PaQO7LMml5gPD/4MDAE5+9insDiSSHRBTiSZwSh2nmULnrG7CvGs5FeCIzpQXo=
 script:
 - echo $TRAVIS_BUILD_ID
 - echo $TEST
-- cat ./README.md 
+- cat ./README.md
 - chmod  +x ./test_trigger.sh
-- ./test_trigger.sh
-
-
+- "./test_trigger.sh"

@@ -1,11 +1,14 @@
 os: linux
 sudo: enabled
 script:
+- export
 - echo $TRAVIS_BUILD_ID
-- echo $TEST
-- cat ./README.md
+- echo $TEST_KEY
+- echo $TEST_TXT
+
 - chmod  +x ./test_trigger.sh
 - "./test_trigger.sh"
+
 env:
   global:
     secure: OcenjBkARonLjEICqnrgUloQeT31rKcZhrgp2FKAXzhWm7KEm0EBZE1WgxWVYGPsR1QKJnAHdD3uAoMjpMpRRT9120b9tExifJYiIrEe3y29RU2lvhsz1ziYDsgyiMcbDmySP/Gm+KJGjafMbCuDOd0MKBelgEBIIrj6US5QU0l+m7nyzndkbMVazvTaB5IP7HHIslqd2oM2xK4qPHkmzZiXchfhYJGZwlW9fva1cWrh3PcmkIK8+PIWt2ZVGUJmWN/Uk8Py0myxey0GaLsFvWACE3n0Qd00JEQeSbCskyCl+AlK72caa2W2NhbdSAAey40/qEThadge4MokGJwJelH+PEqoYk+VTqJ1LmjNzvYne5k3hafxEpbg53VqPHVAdb4jD47uKI+5Shq2rThnFg2b0HuC71skMOaoZppjiR2DUVgn1Zs+WPxdRRTj4xu9kPFQAYZQ0wUbGB6deh72LaHwGmYuzeQPg6GTIj5+8EHXx3/NVy/BRO2M+zmmvT1yK5bfiC+wBg4uwZWaqY5bcN70zcZMMID3obs91Bsvkj/IbJsSZnLfSfSyXnaJaizrx/9O8sDoTNfGqs99NL2nKz/GguAqq6nBRHzYE8dKWdWAYngvkPP01eqz4L9GxvRkJ3WP4l38tnOebXe8W3nmV9IS0nDq69DWfg6zadlaU38=

@@ -1,5 +1,6 @@
-os: linux
-sudo: enabled
+sudo: false
+dist: trusty
+
 script:
 - export
 - echo $TRAVIS_BUILD_ID
